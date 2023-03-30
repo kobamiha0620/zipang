@@ -1,0 +1,365 @@
+@use "./variable"as var;
+$headerH: 75px;
+$btm: calc(7.484vh + 75px + 8.529vh);
+$headerHsp: 48px;
+$btmsp: calc(8.67vh + 44px + 6.078vh);
+$btmsp2: calc(8.67dvh + 44px + 6.078dvh);
+main{
+    overflow: hidden;
+}
+@keyframes rotate-anime {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.header {
+    background-color: var.$blk;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    z-index: 14;
+    width: 100%;
+    height: $headerH;
+    max-height: $headerH;
+    overflow: hidden;
+
+    &__inner {
+        padding: 19px 40px 19px 25px;
+        display: flex;
+        justify-content: space-between
+    }
+    &__jpen{
+        @include var.bg();
+        width: 90px;
+        height: 29px;
+        background-size: 100% auto;
+        margin: 0;
+        background-image:url('../../img/jpen.svg'),url('../../img/jpen-red.svg');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        &:hover{
+            transition: 0.5s;
+            background-image:url('../../img/jpen-red.svg');
+            @media screen and (max-width: var.$spbp) {
+                background-image:url('../../img/jpen.svg');
+            }
+        }
+
+    }
+    &__logo {
+        @include var.bg();
+        width: 240px;
+        height: 38px;
+        background: url('../../img/logo.svg') no-repeat;
+        background-size: 100% auto;
+        margin: 0;
+    }
+
+    &__top {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+
+        img {
+            object-fit: cover;
+            height: 100vh;
+        }
+
+        &--txt {
+            width: 30vw;
+            min-width: 410px;
+            min-height: 275px;
+            height: 35.9vh;
+            background-size: 100% auto;
+            position: absolute;
+            background-repeat: no-repeat;
+            right: 0;
+            bottom: 0;
+            z-index: 11;
+
+            &-in {
+                position: relative;
+                width: 100%;
+                padding: 125px 0 0 28px;
+                padding-top: clamp(141px, 10vw, 10vw);
+
+                p {
+                    @include var.fz(10);
+                    color: white;
+                    line-height: 1.6;
+                    min-width: 282px;
+                    width: 23vw;
+                }
+            }
+        }
+
+        &--discord {
+            width: 12.35vw;
+            height: 12.35vw;
+            position: fixed;
+            left: 7.686%;
+            bottom: 105px;
+            z-index: 12;
+
+            img {
+                width: 100%;
+                height: auto;
+                // animation: rotate-anime 4s linear infinite;
+
+            }
+
+            &:hover {
+                transition: 1s;
+                transform: rotate(360deg);
+
+            }
+        }
+
+        &--logo {
+            width: 362px;
+            margin: 0 auto;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 80px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    &__frame {
+        width: 100%;
+        height: calc(100vh - $headerH);
+        margin: 0;
+        padding: 0;
+
+        div {
+            margin: 0;
+            font-size: 0;
+            padding: 0;
+        }
+
+        &--top {
+            position: fixed;
+            z-index: 12;
+            top: $headerH;
+            width: 100%;
+            height: 8.529vh;
+
+            img {
+                width: 100%;
+                height: 100%;
+                font-size: 0;
+                line-height: 0;
+            }
+        }
+
+        &--bottom {
+            position: fixed;
+            z-index: 12;
+            bottom: 0;
+            width: 100%;
+            height: 7.484vh;
+
+            img {
+                width: 100%;
+                height: 100%;
+                font-size: 0;
+                line-height: 0;
+            }
+        }
+
+        &--right {
+            position: fixed;
+            z-index: 12;
+            right: 0;
+            width: 5.368%;
+            bottom: 7.484vh;
+            height: calc(100vh - $btm);
+
+            img {
+                width: 100%;
+                height: 100%;
+                font-size: 0;
+                line-height: 0;
+            }
+        }
+
+        &--left {
+            position: fixed;
+            z-index: 12;
+            left: 0;
+            width: 3.953%;
+            bottom: 7.484vh;
+            height: calc(100vh - $btm);
+
+            img {
+                width: 100%;
+                height: 100%;
+                font-size: 0;
+                line-height: 0;
+            }
+        }
+    }
+
+    //sp
+    @media screen and (max-width: var.$spbp) {
+        height: $headerHsp;
+        max-height: $headerH;
+
+        &__inner {
+            padding: 13px 18px;
+        }
+
+        &__logo {
+            width: 128px;
+            height: 20px;
+            background-size: 100% auto;
+        }
+
+        &__top {
+            position: relative;
+            height: calc(100vh + $headerHsp);
+            height: calc(100dvh + $headerHsp);
+            img {
+                object-fit: cover;
+                height: calc(100vh + $headerHsp);
+                height: calc(100dvh + $headerHsp);
+            }
+
+            &--txt {
+                width: 46.99vw;
+                min-width: 46.99vw;
+                min-height: 52vw;
+                height: 52vw;
+                min-height: 52vw;
+                background-size: 100% auto;
+                position: absolute;
+                background-repeat: no-repeat;
+                right: 0;
+                bottom: 0;
+                z-index: 11;
+                background-position: right 0 bottom 0;
+                &-in {
+                    position: relative;
+                    width: 100%;
+                    padding: 0;
+                    padding-left: 4.66vw;
+                    padding-right: 10.5vw;
+                    padding-top: 21vw;
+                    p {
+                        width: 33.6vw;
+                        min-width: 33.6vw;
+                    }
+                }
+            }
+
+            &--discord {
+                width: 26vw;
+                height: 26vw;
+                position: fixed;
+                left: 11px;
+                bottom: 43px;
+                z-index: 13;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                &:hover {
+                    transform: none;
+                }
+            }
+
+            &--logo {
+                width: 62.6vw;
+                margin: 0 auto;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 43vw;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        &__frame {
+            height: calc(100vh - $headerHsp);
+            height: calc(100dvh - $headerHsp);
+
+            &--top {
+                width: 100%;
+                position: fixed;
+                top: $headerHsp;
+                height: 6.076vh;
+                height: 6.076dvh;
+            }
+
+            &--bottom {
+                width: 100%;
+                position: fixed;
+                z-index: 12;
+                bottom: 0;
+                height: 8.328vh;
+                height: 8.328dvh;
+            }
+
+            &--right {
+                position: fixed;
+                z-index: 12;
+                right: 0;
+                width: 8.273vw;
+                bottom: 8.328vh;
+                bottom: 8.328dvh;
+                height: calc(100vh - $btmsp);
+                height: calc(100dvh - $btmsp2);
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    font-size: 0;
+                    line-height: 0;
+                }
+            }
+
+            &--left {
+                position: fixed;
+                z-index: 12;
+                left: 0;
+                width: 8.273vw;
+                bottom: 8.328vh;
+                bottom: 8.328dvh;
+                height: calc(100vh - $btmsp);
+                height: calc(100dvh - $btmsp2);
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    font-size: 0;
+                    line-height: 0;
+                }
+            }
+
+        }
+    }
+}
+
+@include var.webpBg('.header__top--txt', var.$imgpath+'pc-frame2', 'png');
+
+@media screen and (max-width: var.$spbp) {
+    @include var.webpBg('.header__top--txt', var.$imgpath+'sp-frame2b', 'png');
+
+}

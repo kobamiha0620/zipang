@@ -1,0 +1,226 @@
+@use "./variable"as var;
+
+.member {
+    margin: 0 auto 130px;
+
+    .blc__inner {
+        width: 400px;
+    }
+
+    &__ttl {
+        @include var.bg();
+        width: 277px;
+        height: 78px;
+        background: url('../../img/ttl_member.svg') no-repeat;
+        background-size: 100% auto;
+        margin: 0 auto 66px;
+    }
+    &__ttl01 {
+        @include var.bg();
+        width: 277px;
+        height: 28px;
+        background: url('../../img/ttl_member01.svg') no-repeat;
+        background-size: 100% auto;
+        margin: 0 auto;
+    }
+    &__ttl02 {
+        @include var.bg();
+        width: 277px;
+        height: 55px;
+        background: url('../../img/ttl_member02.svg') no-repeat;
+        background-size: 100% auto;
+        margin: -4px auto 66px;
+    }
+    @media screen and (max-width: var.$spbp) {
+        width: 76vw;
+        margin: 0 auto 37.5vw;
+
+        .blc__inner {
+            width: 100%;
+        }
+
+        &__ttl {
+            width: 56.2vw;
+            height: 15.8vw;
+            background-size: 100% auto;
+            margin: 0 auto 8.53vw;
+        }
+
+    }
+
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+//大きいスライド
+.mySwiper2 {
+    background: #000;
+    margin: 0 auto 57px;
+
+    .swiper-slide {
+        background: #000;
+    }
+
+    .swiper-zoom-container {
+        width: 255px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .member__sns {
+        display: flex;
+        margin: 33px auto 0;
+        justify-content: space-between;
+        align-items: center;
+        width: clamp(121px, 121px, 121px);
+
+        &--tw {
+            @include var.bg();
+            background-size: 100% auto;
+            width: 35px;
+            height: 35px;
+            background-image:url('../../img/icon_tw.svg'),url('../../img/icon_tw-red.svg');
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            &:hover{
+                transition: 0.5s;
+                background-image:url('../../img/icon_tw-red.svg');
+                @media screen and (max-width: var.$spbp) {
+                    background-image:url('../../img/icon_tw.svg');
+
+                }
+            }
+
+        }
+
+        &--in {
+            @include var.bg();
+            background-size: 100% auto;
+            width: 30px;
+            height: 30px;
+            background-image:url('../../img/icon_insta.svg'),url('../../img/icon_insta-red.svg');
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            &:hover{
+                transition: 0.5s;
+                background-image:url('../../img/icon_insta-red.svg');
+                @media screen and (max-width: var.$spbp) {
+                    background-image:url('../../img/icon_insta.svg');
+
+                }
+            }
+
+        }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 32px;
+        height: 32px;
+        top: calc(50% - 30px);
+    }
+
+    /* 前へ次への矢印カスタマイズ */
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: "";
+        margin: auto;
+        width: 32px;
+        height: 32px;
+    }
+
+    /* 前への矢印カスタマイズ */
+    .swiper-button-prev::after {
+        background-image: url('../../img/arrow_prev.svg');
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+
+    /* 次への矢印カスタマイズ */
+    .swiper-button-next::after {
+        background-image: url('../../img/arrow_next.svg');
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+
+    @media screen and (max-width: var.$spbp) {
+        margin: 0 auto 14vw;
+
+        .swiper-zoom-container {
+            width: 100%;
+            padding: 0 36px;
+        }
+
+        .member__sns {
+            margin: 7.7vw auto 0;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            width: 24px;
+            height: 24px;
+            top: calc(50% - 24px);
+        }
+        .swiper-button-prev::after,
+        .swiper-button-next::after {
+            width: 24px;
+            height: 24px;
+        }
+        .swiper-button-prev{
+            left: 0;
+        }
+        .swiper-button-next {
+            right: 0;
+        }
+    }
+}
+
+.mySwiper {
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+    width: 100%;
+    opacity: 0.4;
+    padding-top: 8px;
+    background: #000;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

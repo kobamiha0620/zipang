@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68" height="68" viewBox="0 0 68 68">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_204" data-name="長方形 204" width="35" height="35" transform="translate(-0.223)"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="長方形_203" data-name="長方形 203" width="24.496" height="28.089" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="tiktok" transform="translate(-243 -2245)">
+    <circle id="楕円形_8" data-name="楕円形 8" cx="34" cy="34" r="34" transform="translate(243 2245)" fill="#fff"/>
+    <g id="マスクグループ_6" data-name="マスクグループ 6" transform="translate(259.223 2261)" clip-path="url(#clip-path)">
+      <g id="グループ_61" data-name="グループ 61" transform="translate(5.171 3.374)">
+        <g id="グループ_60" data-name="グループ 60" clip-path="url(#clip-path-2)">
+          <path id="パス_46" data-name="パス 46" d="M20.837,5.63a6.732,6.732,0,0,1-2.946-4.4A6.716,6.716,0,0,1,17.777,0H12.948L12.94,19.353a4.057,4.057,0,1,1-4.052-4.212,4,4,0,0,1,1.2.188V10.4a8.886,8.886,0,1,0,7.69,8.8V9.387a11.488,11.488,0,0,0,6.719,2.16V6.718A6.675,6.675,0,0,1,20.837,5.63"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

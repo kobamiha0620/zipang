@@ -1,0 +1,88 @@
+@use "./variable"as var;
+
+.road{
+    .blc__inner{
+        
+    }
+    &__ttl{
+        @include var.bg();
+        width: 369px;
+        height: 54px;
+        background: url('../../img/ttl_road.svg') no-repeat;
+        background-size: 100% auto;
+        margin: 0 auto 60px;
+    }
+    &__blc{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto 175px;
+
+        &--img{
+            margin-top: 12px;
+            width: 348px;
+            min-width: 348px;
+            img{
+                width: 100%;                
+            }
+        }
+        &--txt{
+            width: 304px;
+            min-width: 304px;
+
+        }
+        &--point{
+            margin: 0 0 45px;
+            &-ttl{
+                margin: 0 0 25px;
+                font-family: 'Poppins', sans-serif;
+                @include var.fz(26);
+                line-height: 1;
+                font-weight: bold;
+                color: white;
+            }
+            &-txt{
+                @include var.fz(14);
+                line-height: 1.5;
+                color: white;
+            }
+        }
+    }
+    @media screen and (max-width: var.$spbp) {
+        width: 76vw;
+        margin: 0 auto;
+        &__ttl{
+            width: 74.1vw;
+            height: 10.9vw;
+            background-size: 100% auto;
+            margin: 0 auto 8.53vw;
+        }
+        &__blc{
+            display: block;
+            margin: 0 auto 21.5vw;
+            &--img{
+                margin-top: 0;
+                width: 100%;
+                min-width: 100%;
+                margin-bottom: 8.8vw;
+                img{
+                    width: 100%;
+                    
+                }
+            }
+            &--txt{
+                width: 100%;
+                min-width: 100%;
+            }
+            &--point{
+                margin: 0 0 6.6vw;
+                &-ttl{
+                    margin: 0 0 4.5vw;
+                    @include var.fz(18);
+
+                }
+            }
+        }
+    }
+
+}
+

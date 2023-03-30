@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="402.854" height="162" viewBox="0 0 402.854 162">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_294" data-name="長方形 294" width="178.965" height="28" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="midashi" transform="translate(79.045 0.569)">
+    <path id="パス_427" data-name="パス 427" d="M38.038,0,31.664,17.415,25.25,0H19.445L13.072,17.415,6.7,0H0L10.636,29.229h4.831l6.861-18.8,6.9,18.8h4.831L44.7,0Z" transform="translate(32.751)" fill="#fff"/>
+    <path id="パス_428" data-name="パス 428" d="M329.8,0V11.448H312.544V0h-6.292V29.229h6.292V17.781H329.8V29.229h6.292V0Z" transform="translate(-224.746)" fill="#fff"/>
+    <g id="グループ_213" data-name="グループ 213" transform="translate(34.717)">
+      <g id="グループ_212" data-name="グループ 212" clip-path="url(#clip-path)">
+        <path id="パス_429" data-name="パス 429" d="M523.511,5.756a5.542,5.542,0,0,1,.778-2.9,5.876,5.876,0,0,1,2.1-2.081A5.576,5.576,0,0,1,529.267,0h16.45a5.549,5.549,0,0,1,2.9.778,6.1,6.1,0,0,1,2.1,2.081,5.448,5.448,0,0,1,.8,2.9V28h-6.105V18.978H529.539V28h-6.028Zm21.894.311H529.539v6.844h15.867Z" transform="translate(-443.673)" fill="#fff"/>
+        <path id="パス_430" data-name="パス 430" d="M737.967,28V6.067H727V0h28V6.067H744.034V28Z" transform="translate(-616.129)" fill="#fff"/>
+        <path id="パス_431" data-name="パス 431" d="M929.212,14.226V3.57h5.95V8.431a4.813,4.813,0,0,1-.778,2.625,6.527,6.527,0,0,1-2.139,2.061,8.258,8.258,0,0,1-3.033,1.108" transform="translate(-787.502 -3.026)" fill="#fff"/>
+        <path id="パス_432" data-name="パス 432" d="M995.656,28a5.569,5.569,0,0,1-2.878-.778,5.817,5.817,0,0,1-2.1-2.1,5.569,5.569,0,0,1-.778-2.878V19.639h6.028v2.294h15.867v-4.9H995.656a5.569,5.569,0,0,1-2.878-.778,5.863,5.863,0,0,1-2.1-2.08,5.539,5.539,0,0,1-.778-2.9V5.756a5.541,5.541,0,0,1,.778-2.9,5.872,5.872,0,0,1,2.1-2.081A5.576,5.576,0,0,1,995.656,0h16.489A5.478,5.478,0,0,1,1015,.778a6.1,6.1,0,0,1,2.1,2.081,5.446,5.446,0,0,1,.8,2.9V8.361h-6.105V6.067H995.928v4.9h16.217a5.478,5.478,0,0,1,2.858.778,6.1,6.1,0,0,1,2.1,2.081,5.446,5.446,0,0,1,.8,2.9v5.522a5.474,5.474,0,0,1-.8,2.878,6.035,6.035,0,0,1-2.1,2.1,5.471,5.471,0,0,1-2.858.778Z" transform="translate(-838.935)" fill="#fff"/>
+      </g>
+    </g>
+    <text id="OPERA_" data-name="OPERA?" transform="translate(321.809 129.769)" fill="none" stroke="#c7b9f4" stroke-width="2" font-size="72" font-family="Poppins-Black, Poppins" font-weight="800"><tspan x="-286.128" y="0">OPERA?</tspan></text>
+    <text id="ZIPANG_" data-name="ZIPANG
+" transform="translate(204.955 77.431)" fill="none" stroke="#a2ddf1" stroke-width="2" font-size="72" font-family="Poppins-Black, Poppins" font-weight="800"><tspan x="-281.16" y="0">ZIPANG</tspan><tspan x="0" y="57"></tspan></text>
+  </g>
+</svg>

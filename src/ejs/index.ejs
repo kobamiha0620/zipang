@@ -1,0 +1,98 @@
+ <%
+// 以下の設定値を記入のこと
+
+var pageinit = {
+ttl : 'ZIPANG OPERA' ,
+keywords : '' ,
+description : 'ZIPANG OPERAが奏でるジャパニーズポップを、新しいインターネット時代"web3"を通じて、世界に発信していきます。NFTの発行やメタバースの創造にも進出していく予定です。' ,
+ogurl : 'https://z-anotherworld.jp/' ,
+path: '',
+ogimage : '' ,
+path : '' ,
+category : ['top'] ,
+pagename : '',
+css: [],
+js:[]
+};
+%> 
+
+
+  
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="<%= pageinit.ogurl %>">
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
+
+<meta name="description" content="<%= pageinit.description %>"/>
+<meta property="og:url" content="<%= pageinit.ogurl %>"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="<%= pageinit.ttl %>"/>
+<meta property="og:description" content="<%= pageinit.ogurl %>"/>
+<meta property="og:site_name" content="<%= pageinit.ttl %>"/>
+<meta property="og:image" content="./img/zipangopera-ogp.jpg"/>
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!-- Google Font -->
+
+<!-- swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<!-- swiper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.js"></script>
+<link rel="stylesheet" href="./assets/css/style.css">
+
+<title><%= pageinit.ttl %></title>
+
+</head>
+
+
+<body>
+
+<%- include('./module/header'); %>
+
+<main class="main">
+    <%- include('./module/about'); %>
+
+    <%- include('./module/member'); %>
+
+    <%- include('./module/roadmap'); %>
+    <%- include('./module/faq'); %>
+
+</main>
+
+<%- include('./module/footer'); %>
+
+
+
+<script src="./assets/js/main.js"></script>
+<noscript>
+    <style>
+      .load-fade, .scroll-up {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+
+      }
+    </style>
+  </noscript>
+</body>
+</html>
+
+
+
+
+
+
+
+    
+
+  

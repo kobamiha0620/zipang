@@ -1,0 +1,37 @@
+{
+  "name": "zipang",
+  "version": "1.0.0",
+  "description": "/",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bs": "browser-sync start  --server 'dest/' --files '**/*'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kobamiha0620/zipang.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kobamiha0620/zipang/issues"
+  },
+  "homepage": "https://github.com/kobamiha0620/zipang#readme",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.29.1",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-ejs": "^5.1.0",
+    "gulp-mode": "^1.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-purgecss": "^5.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-glob-use-forward": "^0.1.3",
+    "sass": "^1.60.0"
+  }
+}

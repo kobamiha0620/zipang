@@ -1,0 +1,159 @@
+@use "./variable"as var;
+
+.footer{
+    background-color: var.$blk;
+    padding: 19px 40px 19px 25px;
+    &__inner{
+        width: var.$pcbp;
+        margin: 0 auto;
+        padding: 100px 0 110px; 
+    }
+    &__copy{
+        color: white;
+        margin: 0 auto;
+        text-align: center;
+        @include var.fz(10);
+    }
+    &__anotherlogo{
+        width: 282px;
+        height: 145px;
+        @include var.bg();
+        margin: 0 auto 50px;
+    }
+    &__logo{
+        @include var.bg();
+        width: 205px;
+        height: 33px;
+        background: url('../../img/logo.svg') no-repeat;
+        background-size: 100% auto;
+        margin: 0 auto 25px;
+    }
+    &__link{
+        @include var.fz(14);
+        display: inline-block;
+        margin: 0 auto;
+        color: var.$blk;
+        border-radius: 24px;
+        text-decoration: none;
+        background-size: 12px 19px;
+        background-color: white;
+        padding: 16px 50px;
+        background-position: right 20px center;
+        background-image:url('../../img/arrow.svg'),url('../../img/arrow_hover.svg');
+        background-repeat: no-repeat;
+        &:hover{
+            background-color: #C40001;
+            color: #FFF;
+            transition: 0.5s;
+            background-image:url('../../img/arrow_hover.svg');
+
+        }
+        &--wrapper{
+            text-align: center;
+            margin: 0 auto 37px;
+        }
+    }
+    &__sns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 34px;
+        padding: 0;
+        li{
+            list-style-type: none;
+            &:first-child{
+                margin-right: 40px;
+            }
+        }
+        &--tw{
+            @include var.bg();
+            width: 44px;
+            height: 44px;
+            background-position: 0 0;
+            background-image:url('../../img/icon_twitter.svg'),url('../../img/icon_twitter-red.svg');
+            background-repeat: no-repeat;
+            &:hover{
+                transition: 0.5s;
+                background-image:url('../../img/icon_twitter-red.svg');
+    
+            }
+        }
+        &--dc{
+            @include var.bg();
+            background-position: 0 0;
+            background-image:url('../../img/icon_discord.svg'),url('../../img/icon_discord-red.png');
+            background-repeat: no-repeat;
+            width: 44px;
+            height: 33px;
+            &:hover{
+                transition: 0.5s;
+                background-image:url('../../img/icon_discord-red.png');
+    
+            }
+        }
+    }
+    //footer
+    @media screen and (max-width: var.$spbp) {
+        padding: 0;
+        width: 100%;
+        &__inner{
+            width: 100%;
+            padding: 23.4% 0 14.6%; 
+        }
+        &__anotherlogo{
+            width: 62.6vw;
+            height: 32.22vw;
+            @include var.bg();
+            margin: 0 auto 14.1%;
+        }
+        &__logo{
+            width: 45.6vw;
+            height: 7.4vw;
+            background: url('../../img/logo.svg') no-repeat;
+            background-size: 100% auto;
+            margin: 0 auto 5.86vw;
+        }
+        &__link{
+            @include var.fz(12);
+            padding: 4.26vw 15vw 4.26vw 13.33vw;
+            background-position: right 5.33vw center;
+            &:hover {
+                background-image:url('../../img/arrow.svg');
+                background-color: #FFF;
+                color: #000;
+            }
+            &--wrapper{
+                margin: 0 auto 10vw;
+            }
+        }
+        &__sns{
+
+            margin: 0 auto 7.46vw;
+            li{
+                &:first-child{
+                    margin-right: 9vw;
+                }
+            }
+            &--tw{
+                width: 9.6vw;
+                height: 9.6vw;
+                background-size: 100% auto;
+                &:hover{
+                    background-image:url('../../img/icon_twitter.svg');
+
+                }
+
+            }
+            &--dc{
+                width: 9.6vw;
+                height: 7.3vw;
+                background-size: 100% auto;
+                &:hover{
+                    background-image:url('../../img/icon_discord.svg');
+
+                }
+            }
+        }
+    }
+}
+@include var.webpBg('.footer__anotherlogo', var.$imgpath+'another_logo', 'png');
