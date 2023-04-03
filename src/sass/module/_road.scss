@@ -15,12 +15,14 @@
     &__blc{
         display: flex;
         justify-content: space-between;
+        justify-content: center;
         margin: 0 auto 175px;
 
         &--img{
             margin-top: 12px;
             width: 348px;
             min-width: 348px;
+            margin: 0 auto;
             img{
                 width: 100%;                
             }

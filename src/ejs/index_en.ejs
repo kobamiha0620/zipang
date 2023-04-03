@@ -37,6 +37,12 @@ js:[]
 <meta property="og:site_name" content="<%= pageinit.ttl %>"/>
 <meta property="og:image" content="./img/zipangopera-ogp.jpg"/>
 
+<!-- favicon -->
+<link rel="icon" href="./img/favicons/favicon.ico" sizes="any"><!-- 32×32 -->
+<link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png"><!-- 180×180 -->
+<link rel="manifest" href="./img/favicons/manifest.webmanifest">
+
 <!-- Google Font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,7 +68,7 @@ js:[]
 <main class="main">
     <%- include('./module/about_en'); %>
 
-    <%- include('./module/member'); %>
+    <%- include('./module/member_en'); %>
 
     <%- include('./module/roadmap'); %>
     <%- include('./module/faq_en'); %>

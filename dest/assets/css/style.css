@@ -730,6 +730,29 @@ main {
     background-image: url("../../img/jpen.svg");
   }
 }
+.header__enjp {
+  background-size: 100% auto;
+  white-space: nowrap;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 90px;
+  height: 29px;
+  background-size: 100% auto;
+  margin: 0;
+  background-image: url("../../img/enjp.svg"), url("../../img/enjp_red.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.header__enjp:hover {
+  transition: 0.5s;
+  background-image: url("../../img/enjp_red.svg");
+}
+@media screen and (max-width: 768px) {
+  .header__enjp:hover {
+    background-image: url("../../img/enjp.svg");
+  }
+}
 .header__logo {
   background-size: 100% auto;
   white-space: nowrap;
@@ -747,35 +770,35 @@ main {
   height: 100vh;
   width: 100%;
 }
-.header__top img {
+.header__top--feature img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100vh;
+  height: 93vh;
+  margin-top: 78px;
+  max-height: 100vh;
+}
+.header__top--mlogo {
+  width: 86px;
+  position: absolute;
+  top: 178px;
+  left: 7.686%;
+  margin: 0;
+}
+.header__top--mlogo img {
+  width: 86px;
+  height: 86px;
 }
 .header__top--txt {
-  width: 30vw;
-  min-width: 410px;
-  min-height: 275px;
-  height: 35.9vh;
+  width: 409px;
+  height: 190px;
   background-size: 100% auto;
   position: absolute;
   background-repeat: no-repeat;
   right: 0;
   bottom: 0;
   z-index: 11;
-}
-.header__top--txt-in {
-  position: relative;
-  width: 100%;
-  padding: 125px 0 0 28px;
-  padding-top: clamp(141px, 10vw, 10vw);
-}
-.header__top--txt-in p {
-  font-size: 0.625rem;
-  color: white;
-  line-height: 1.6;
-  min-width: 282px;
-  width: 23vw;
+  white-space: nowrap;
+  text-indent: -9999px;
 }
 .header__top--discord {
   width: 12.35vw;
@@ -788,6 +811,7 @@ main {
 .header__top--discord img {
   width: 100%;
   height: auto;
+  margin: 0;
 }
 .header__top--discord:hover {
   transition: 1s;
@@ -883,42 +907,48 @@ main {
     height: 20px;
     background-size: 100% auto;
   }
+  .header__jpen {
+    width: 72px;
+    height: 23px;
+  }
+  .header__enjp {
+    width: 72px;
+    height: 23px;
+  }
   .header__top {
     position: relative;
-    height: calc(100vh + 48px);
-    height: calc(100dvh + 48px);
+    height: 100vh;
+    height: 100dvh;
   }
-  .header__top img {
+  .header__top--feature img {
+    margin-top: 45px;
     -o-object-fit: cover;
        object-fit: cover;
-    height: calc(100vh + 48px);
-    height: calc(100dvh + 48px);
+    height: 100vh;
+    height: 100dvh;
+  }
+  .header__top--mlogo {
+    width: 40px;
+    position: absolute;
+    top: 120px;
+    left: 10%;
+    margin: 0;
+  }
+  .header__top--mlogo img {
+    width: 40px;
+    height: 40px;
   }
   .header__top--txt {
-    width: 46.99vw;
-    min-width: 46.99vw;
-    min-height: 52vw;
-    height: 52vw;
-    min-height: 52vw;
+    white-space: nowrap;
+    text-indent: -9999px;
+    width: 176px;
+    height: 150px;
     background-size: 100% auto;
     position: absolute;
     background-repeat: no-repeat;
     right: 0;
     bottom: 0;
     z-index: 11;
-    background-position: right 0 bottom 0;
-  }
-  .header__top--txt-in {
-    position: relative;
-    width: 100%;
-    padding: 0;
-    padding-left: 4.66vw;
-    padding-right: 10.5vw;
-    padding-top: 21vw;
-  }
-  .header__top--txt-in p {
-    width: 33.6vw;
-    min-width: 33.6vw;
   }
   .header__top--discord {
     width: 26vw;
@@ -929,6 +959,7 @@ main {
     z-index: 13;
   }
   .header__top--discord img {
+    margin: 0;
     width: 100%;
     height: auto;
   }
@@ -941,9 +972,12 @@ main {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 43vw;
+    bottom: clamp(100px, 43vw, 159px);
+    max-width: 235px;
+    max-height: 121px;
   }
   .header__top--logo img {
+    margin-top: 0;
     width: 100%;
     height: auto;
   }
@@ -1001,19 +1035,19 @@ main {
 }
 
 .is-no-webp .header__top--txt {
-  background-image: url(../../img/pc-frame2.png);
+  background-image: url(../../img/pc-frame_rb.png);
 }
 
 .is-webp .header__top--txt {
-  background-image: url(../../img/pc-frame2.webp);
+  background-image: url(../../img/pc-frame_rb.webp);
 }
 
 @media screen and (max-width: 768px) {
   .is-no-webp .header__top--txt {
-    background-image: url(../../img/sp-frame2b.png);
+    background-image: url(../../img/sp-frame_rb2.png);
   }
   .is-webp .header__top--txt {
-    background-image: url(../../img/sp-frame2b.webp);
+    background-image: url(../../img/sp-frame_rb2.webp);
   }
 }
 .member {
@@ -1117,14 +1151,14 @@ main {
   margin: 0 auto;
   display: block;
 }
-.mySwiper2 .member__sns {
+.mySwiper2 .member__sns, .mySwiper2 .member__sns-three {
   display: flex;
   margin: 33px auto 0;
   justify-content: space-between;
   align-items: center;
   width: 121px;
 }
-.mySwiper2 .member__sns--tw {
+.mySwiper2 .member__sns--tw, .mySwiper2 .member__sns-three--tw {
   background-size: 100% auto;
   white-space: nowrap;
   text-indent: -9999px;
@@ -1137,16 +1171,38 @@ main {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-.mySwiper2 .member__sns--tw:hover {
+.mySwiper2 .member__sns--tw:hover, .mySwiper2 .member__sns-three--tw:hover {
   transition: 0.5s;
   background-image: url("../../img/icon_tw-red.svg");
 }
 @media screen and (max-width: 768px) {
-  .mySwiper2 .member__sns--tw:hover {
+  .mySwiper2 .member__sns--tw:hover, .mySwiper2 .member__sns-three--tw:hover {
     background-image: url("../../img/icon_tw.svg");
   }
 }
-.mySwiper2 .member__sns--in {
+.mySwiper2 .member__sns--yt, .mySwiper2 .member__sns-three--yt {
+  background-size: 100% auto;
+  white-space: nowrap;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  display: block;
+  background-size: 100% auto;
+  width: 35px;
+  height: 35px;
+  background-image: url("../../img/icon_youtube.svg"), url("../../img/icon_youtube-red.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.mySwiper2 .member__sns--yt:hover, .mySwiper2 .member__sns-three--yt:hover {
+  transition: 0.5s;
+  background-image: url("../../img/icon_youtube-red.svg");
+}
+@media screen and (max-width: 768px) {
+  .mySwiper2 .member__sns--yt:hover, .mySwiper2 .member__sns-three--yt:hover {
+    background-image: url("../../img/icon_youtube.svg");
+  }
+}
+.mySwiper2 .member__sns--in, .mySwiper2 .member__sns-three--in {
   background-size: 100% auto;
   white-space: nowrap;
   text-indent: -9999px;
@@ -1159,14 +1215,17 @@ main {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-.mySwiper2 .member__sns--in:hover {
+.mySwiper2 .member__sns--in:hover, .mySwiper2 .member__sns-three--in:hover {
   transition: 0.5s;
   background-image: url("../../img/icon_insta-red.svg");
 }
 @media screen and (max-width: 768px) {
-  .mySwiper2 .member__sns--in:hover {
+  .mySwiper2 .member__sns--in:hover, .mySwiper2 .member__sns-three--in:hover {
     background-image: url("../../img/icon_insta.svg");
   }
+}
+.mySwiper2 .member__sns-three {
+  width: 151px;
 }
 .mySwiper2 .swiper-button-prev,
 .mySwiper2 .swiper-button-next {
@@ -1262,12 +1321,14 @@ main {
 .road__blc {
   display: flex;
   justify-content: space-between;
+  justify-content: center;
   margin: 0 auto 175px;
 }
 .road__blc--img {
   margin-top: 12px;
   width: 348px;
   min-width: 348px;
+  margin: 0 auto;
 }
 .road__blc--img img {
   width: 100%;

@@ -92,7 +92,7 @@
         display: block;
     }
 
-    .member__sns {
+    .member__sns,  .member__sns-three{
         display: flex;
         margin: 33px auto 0;
         justify-content: space-between;
@@ -115,7 +115,23 @@
 
                 }
             }
+        }
+        &--yt {
+            @include var.bg();
+            background-size: 100% auto;
+            width: 35px;
+            height: 35px;
+            background-image:url('../../img/icon_youtube.svg'),url('../../img/icon_youtube-red.svg');
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            &:hover{
+                transition: 0.5s;
+                background-image:url('../../img/icon_youtube-red.svg');
+                @media screen and (max-width: var.$spbp) {
+                    background-image:url('../../img/icon_youtube.svg');
 
+                }
+            }
         }
 
         &--in {
@@ -136,6 +152,9 @@
             }
 
         }
+    }
+ .member__sns-three{
+        width: clamp(151px, 151px, 151px);
     }
 
     .swiper-button-prev,

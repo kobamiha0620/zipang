@@ -52,6 +52,24 @@ main{
         }
 
     }
+    &__enjp{
+        @include var.bg();
+        width: 90px;
+        height: 29px;
+        background-size: 100% auto;
+        margin: 0;
+        background-image:url('../../img/enjp.svg'),url('../../img/enjp_red.svg');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        &:hover{
+            transition: 0.5s;
+            background-image:url('../../img/enjp_red.svg');
+            @media screen and (max-width: var.$spbp) {
+                background-image:url('../../img/enjp.svg');
+            }
+        }
+
+    }
     &__logo {
         @include var.bg();
         width: 240px;
@@ -65,38 +83,36 @@ main{
         position: relative;
         height: 100vh;
         width: 100%;
-
-        img {
-            object-fit: cover;
-            height: 100vh;
+        &--feature{
+            img {
+                object-fit: cover;
+                height: 93vh;
+                margin-top: 78px;
+                max-height: 100vh;
+            }
         }
-
+        &--mlogo{
+            width: 86px;
+            position: absolute;
+            top: 178px;
+            left: 7.686%;
+            margin: 0;
+            img{
+                width: 86px;
+                height: 86px;
+            }
+        }
         &--txt {
-            width: 30vw;
-            min-width: 410px;
-            min-height: 275px;
-            height: 35.9vh;
+            width: 409px;
+            height: 190px;
             background-size: 100% auto;
             position: absolute;
             background-repeat: no-repeat;
             right: 0;
             bottom: 0;
             z-index: 11;
-
-            &-in {
-                position: relative;
-                width: 100%;
-                padding: 125px 0 0 28px;
-                padding-top: clamp(141px, 10vw, 10vw);
-
-                p {
-                    @include var.fz(10);
-                    color: white;
-                    line-height: 1.6;
-                    min-width: 282px;
-                    width: 23vw;
-                }
-            }
+            white-space: nowrap;
+            text-indent: -9999px;
         }
 
         &--discord {
@@ -110,8 +126,8 @@ main{
             img {
                 width: 100%;
                 height: auto;
+                margin: 0;
                 // animation: rotate-anime 4s linear infinite;
-
             }
 
             &:hover {
@@ -225,42 +241,52 @@ main{
             height: 20px;
             background-size: 100% auto;
         }
+        &__jpen{
+            width: 72px;
+            height: 23px;
+        }
+        &__enjp{
+            width: 72px;
+            height: 23px;
+        }
 
         &__top {
             position: relative;
-            height: calc(100vh + $headerHsp);
-            height: calc(100dvh + $headerHsp);
-            img {
-                object-fit: cover;
-                height: calc(100vh + $headerHsp);
-                height: calc(100dvh + $headerHsp);
+            height: 100vh;
+            height: 100dvh;
+            &--feature{
+                img {
+                    margin-top: 45px;
+                    object-fit: cover;
+                    height: 100vh;
+                    height: 100dvh;
+                }
             }
 
+            &--mlogo{
+                width: 40px;
+                position: absolute;
+                top: 120px;
+                left: 10%;
+                margin: 0;
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
             &--txt {
-                width: 46.99vw;
-                min-width: 46.99vw;
-                min-height: 52vw;
-                height: 52vw;
-                min-height: 52vw;
+                white-space: nowrap;
+                text-indent: -9999px;
+                // min-width: 46.93vw;
+                width: 176px;
+                height: 150px;
+                // min-height: 40vw;
                 background-size: 100% auto;
                 position: absolute;
                 background-repeat: no-repeat;
                 right: 0;
                 bottom: 0;
                 z-index: 11;
-                background-position: right 0 bottom 0;
-                &-in {
-                    position: relative;
-                    width: 100%;
-                    padding: 0;
-                    padding-left: 4.66vw;
-                    padding-right: 10.5vw;
-                    padding-top: 21vw;
-                    p {
-                        width: 33.6vw;
-                        min-width: 33.6vw;
-                    }
-                }
             }
 
             &--discord {
@@ -272,6 +298,7 @@ main{
                 z-index: 13;
 
                 img {
+                    margin: 0;
                     width: 100%;
                     height: auto;
                 }
@@ -287,9 +314,12 @@ main{
                 position: absolute;
                 left: 50%;
                 transform: translateX(-50%);
-                bottom: 43vw;
-
+                // bottom: 43vw;
+                bottom: clamp(100px, 43vw, 159px);
+                max-width: 235px;
+                max-height: 121px;;
                 img {
+                    margin-top: 0;
                     width: 100%;
                     height: auto;
                 }
@@ -357,9 +387,9 @@ main{
     }
 }
 
-@include var.webpBg('.header__top--txt', var.$imgpath+'pc-frame2', 'png');
+@include var.webpBg('.header__top--txt', var.$imgpath+'pc-frame_rb', 'png');
 
 @media screen and (max-width: var.$spbp) {
-    @include var.webpBg('.header__top--txt', var.$imgpath+'sp-frame2b', 'png');
+    @include var.webpBg('.header__top--txt', var.$imgpath+'sp-frame_rb2', 'png');
 
 }

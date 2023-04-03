@@ -21,6 +21,12 @@
 <meta property="og:site_name" content="ZIPANG OPERA"/>
 <meta property="og:image" content="./img/zipangopera-ogp.jpg"/>
 
+<!-- favicon -->
+<link rel="icon" href="./img/favicons/favicon.ico" sizes="any"><!-- 32×32 -->
+<link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png"><!-- 180×180 -->
+<link rel="manifest" href="./img/favicons/manifest.webmanifest">
+
 <!-- Google Font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,27 +50,31 @@
 <header id="header" class="header">
     <div class="header__inner">
         <h1 class="header__logo">ZIPANG OPERA Anotherworld</h1>
-        <a href="./index.html" class="header__jpen">JP/EN</a>
+        <a href="./index.html" class="header__enjp">JP/EN</a>
     </div>
 </header>
 
 <div class="header__top">
-    <div class="pc">    
+    <div class="header__top--feature">
+    <div class="pc">
         <picture>
-            <source srcset="./img/top_pc.webp" type="image/webp">
-            <img src="./img/top_pc.jpg" alt="" width="2732" height="1532">
+            <source srcset="./img/pc_top_big.webp" type="image/webp">
+            <img src="./img/pc_top_big.jpg" alt="" width="4098" height="2873">
         </picture>
     </div>
     <div class="sp">
         <picture>
-            <source srcset="./img/top_sp.webp" type="image/webp">
-            <img src="./img/top_sp.png" alt="" width="2754" height="1836">
+            <source srcset="./img/sp_top_big.webp" type="image/webp">
+            <img src="./img/sp_top_big.png" alt="" width="2754" height="1836">
         </picture>
     </div>
+</div>
+<figure class="header__top--mlogo">
+    <img src="./img/icon.svg" alt="" width="90" height="90">
+</figure>
     <div class="header__top--txt">
-        <div class="header__top--txt-in">
-            <p>A new voyage of ZIPANG OPERA aiming for the yet unseen world, "Another World"</p>
-        </div>
+        Zipang Opera is a music performance unit that delivers a completely new Japanese pop culture to the world,
+        distinct from traditional Japanese culture.
     </div>
 
     <div class="load-active">
@@ -76,7 +86,7 @@
         </div>
     </div>
     <div class="header__top--discord">
-        <a href="" target="_blank" rel="noopener noreferrer">
+        <a href="https://discord.gg/D83CxFrEUZ" target="_blank" rel="noopener noreferrer">
             <picture>
                 <source srcset="./img/discord-mark.webp" type="image/webp">
                 <img src="./img/discord-mark.png" alt="" width="338" height="338">
@@ -95,7 +105,7 @@
     </div>
 
     <div class="header__frame--bottom">
-        <picture>
+        <picture>   
             <source srcset="./img/pc-frame_bottom.webp" type="image/webp">
             <img src="./img/pc-frame_bottom.png" alt="" width="4098" height="172">
         </picture>
@@ -240,7 +250,7 @@
         <div class="load-fade">
             <ul class="whatz__sns">
                 <li class="scroll-up">
-                    <a href="https://twitter.com/zipang_opera" class="whatz__sns--tw" target="_blank"
+                    <a href="https://twitter.com/Z_anotherworld" class="whatz__sns--tw" target="_blank"
                         rel="noopener noreferrer">Twitter</a>
                 </li>
                 <li class="scroll-up02">
@@ -274,48 +284,49 @@
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container">
                             <picture>
-                                <source srcset="./img/img_profile01.webp" type="image/webp">
-                                <img src="./img/img_profile01.png" alt="Ryuji Sato" width="765" height="1125">
+                                <source srcset="./img/img_profile01-en.webp" type="image/webp">
+                                <img src="./img/img_profile01-en.png" alt="Ryuji Sato" width="765" height="1125">
                             </picture>
                             <div class="member__sns">
-                                <a href="" class="member__sns--tw" target="_blank" rel="noopener noreferrer">Twiiter Ryuji Sato</a>
-                                <a href="" class="member__sns--in" target="_blank" rel="noopener noreferrer">insta Ryuji Sato</a>
+                                <a href="https://twitter.com/ryuji7117" class="member__sns--tw" target="_blank" rel="noopener noreferrer">Twiiter Ryuji Sato</a>
+                                <a href="https://www.instagram.com/ryuji_japan/" class="member__sns--in" target="_blank" rel="noopener noreferrer">insta Ryuji Sato</a>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container">
                             <picture>
-                                <source srcset="./img/img_profile02.webp" type="image/webp">
-                                <img src="./img/img_profile02.png" alt="Yuu Fukuzawa" width="765" height="1125">
+                                <source srcset="./img/img_profile02-en.webp" type="image/webp">
+                                <img src="./img/img_profile02-en.png" alt="Yuu Fukuzawa" width="765" height="1125">
                             </picture>
                             <div class="member__sns">
-                                <a href="" class="member__sns--tw" target="_blank" rel="noopener noreferrer">Twiiter Yuu Fukuzawa</a>
-                                <a href="" class="member__sns--in" target="_blank" rel="noopener noreferrer">insta Yuu Fukuzawa</a>
+                                <a href="https://twitter.com/fukuzawayuu" class="member__sns--tw" target="_blank" rel="noopener noreferrer">Twiiter Yuu Fukuzawa</a>
+                                <a href="https://www.instagram.com/yuu_fukuzawa/" class="member__sns--in" target="_blank" rel="noopener noreferrer">insta Yuu Fukuzawa</a>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container">
                             <picture>
-                                <source srcset="./img/img_profile03.webp" type="image/webp">
-                                <img src="./img/img_profile03.png" alt="Shinnosuke" width="765" height="1125">
+                                <source srcset="./img/img_profile03-en.webp" type="image/webp">
+                                <img src="./img/img_profile03-en.png" alt="Shinnosuke" width="765" height="1125">
                             </picture>
-                            <div class="member__sns">
-                                <a href="" class="member__sns--tw" target="_blank" rel="noopener noreferrer">Twiiter Shinnosuke</a>
-                                <a href="" class="member__sns--in" target="_blank" rel="noopener noreferrer">insta Shinnosuke</a>
+                            <div class="member__sns-three">
+                                <a href="https://twitter.com/_sin_music" class="member__sns--tw" target="_blank" rel="noopener noreferrer">Twiiter Shinnosuke</a>
+                                <a href="https://www.instagram.com/_sin_nico/" class="member__sns--in" target="_blank" rel="noopener noreferrer">insta Shinnosuke</a>
+                                <a href="https://www.youtube.com/@sin7402" class="member__sns--yt" target="_blank" rel="noopener noreferrer">insta Shinnosuke</a>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container">
                             <picture>
-                                <source srcset="./img/img_profile04.webp" type="image/webp">
-                                <img src="./img/img_profile04.png" alt="spi" width="765" height="1125">
+                                <source srcset="./img/img_profile04-en.webp" type="image/webp">
+                                <img src="./img/img_profile04-en.png" alt="spi" width="765" height="1125">
                             </picture>
                             <div class="member__sns">
-                                <a href="" class="member__sns--tw" target="_blank" rel="noopener noreferrer">Twiiter spi</a>
-                                <a href="" class="member__sns--in" target="_blank" rel="noopener noreferrer">insta spi</a>
+                                <a href="https://twitter.com/spi_bot_william" class="member__sns--tw" target="_blank" rel="noopener noreferrer">Twiiter spi</a>
+                                <a href="https://www.instagram.com/william.spearman" class="member__sns--in" target="_blank" rel="noopener noreferrer">insta spi</a>
                             </div>
                         </div>
                     </div>
@@ -381,7 +392,7 @@
     <section id="road" class="road load-fade">
     <div class="blc__inner">
         <h2 class="road__ttl">ROAD MAP</h2>
-        <div class="road__blc">
+        <!-- <div class="road__blc">
             <div class="road__blc--img scroll-up">
                 <img src="./img/img_roadmap.svg" alt="Comming Soon" width="315" height="193">
             </div>
@@ -398,6 +409,11 @@
                     <h3 class="road__blc--point-ttl">POINT 3</h3>
                     <p class="road__blc--point-txt">textテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキスト</p>
                 </div>
+            </div>
+        </div> -->
+        <div class="road__blc">
+            <div class="road__blc--img scroll-up">
+                <img src="./img/img_roadmap.svg" alt="Comming Soon" width="315" height="193">
             </div>
         </div>
     </div>
@@ -482,8 +498,8 @@
             </a>
         </p>
         <ul class="footer__sns">
-            <li><a href="https://twitter.com/zipang_opera" target="_blank" rel="noopener noreferrer" class="footer__sns--tw">Twitter</a></li>
-            <li><a href="" target="_blank" rel="noopener noreferrer" class="footer__sns--dc">Discord</a></li>
+            <li><a href="https://twitter.com/Z_anotherworld" target="_blank" rel="noopener noreferrer" class="footer__sns--tw">Twitter</a></li>
+            <li><a href="https://discord.gg/D83CxFrEUZ" target="_blank" rel="noopener noreferrer" class="footer__sns--dc">Discord</a></li>
         </ul>
         <p class="footer__copy"><small>(C) 2023 ZIPANG OPERA</small></p>
     </div>
