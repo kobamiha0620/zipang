@@ -821,9 +821,8 @@ main {
   width: 362px;
   margin: 0 auto;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 80px;
+  right: 5vw;
+  bottom: 200px;
 }
 .header__top--logo img {
   width: 100%;
@@ -970,8 +969,7 @@ main {
     width: 62.6vw;
     margin: 0 auto;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 10vw;
     bottom: clamp(100px, 43vw, 159px);
     max-width: 235px;
     max-height: 121px;
